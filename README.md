@@ -1,22 +1,25 @@
-### Shopping Bot
+# Shopping Bot
 
-#### Features
-Refreshes link until "Add to Cart" button is available
-Automate entire checkout process
+### Features
 
-Prerequisites
-Sign up for a Best Buy account
-Add all billing/shipping info to your account (must only have one card on the account)
-Dependencies
+Refreshs the page if the item is not available
+Automate entire checkout process until the item is done being purchased
+
+### Prerequisites
+
+Need a account for Bestbuyt
+Add billing/shipping info to your account (Only has one card on the account)
+
+### Dependencies
+Python 3
 Selenium
-pip install selenium
+  pip install selenium
 Google Chrome
-ChromeDriver
+  ChromeDriver
 Extract the compressed chromedriver executable to a driectory of your choice (be sure to update the path in bot.py accordingly)
 For the Windows machine I developed this on, I chose C:\Program Files (x86)\ChromeDriver\chromedriver.exe
-Running the Bot
-Make sure you have Python 3.9
-Edit the info.py file with your Best Buy account email and password and cvv for the card on the account
-Navigate to your project directory and run the bot.py script from your preferred environment
-Feel free to change the Best Buy links in the bot.py file to any item on bestbuy.com
-NOTE: From testing it appears that it depends on the price of the item wheter or not the cvv number is asked for. If you plan to use this bot for something cheaper you may need to remove/comment the segment of code detecting and filling in the cvv field.
+
+### Running the Bot
+Upload info.py file in the same dir that contains your act email pw, and cvv of the card 
+Works with any Bestbuy items link
+
